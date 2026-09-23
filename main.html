@@ -1,79 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Size Chart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Chart</title>
+    <style>
+        /* Optional CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
 
-  <style>
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      max-width: 700px;
-    }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            border: 1px solid #ccc;
+        }
 
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-    }
+        /* Header Styling */
+        thead th {
+            background-color: #B54E4E; /* Brick Red color from image */
+            color: white;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #fff; /* White grid lines in header */
+        }
 
-    th {
-      background-color: #f5f5f5;
-    }
-  </style>
+        /* Data Cell Styling */
+        tbody td {
+            padding: 10px;
+            border: 1px solid #fff; /* White grid lines in body */
+        }
+
+        /* Row Background Colors */
+        /* Row 1: Waist - Light Grey */
+        tbody tr:nth-child(1) {
+            background-color: #DCDCDC;
+            color: #666;
+        }
+
+        /* Row 2: Chest - Light Pink */
+        tbody tr:nth-child(2) {
+            background-color: #F2DCDC;
+            color: #666;
+        }
+
+        /* Row 3: Sleeve - Light Grey */
+        tbody tr:nth-child(3) {
+            background-color: #DCDCDC;
+            color: #666;
+        }
+        
+        /* First column bold styling to match image appearance */
+        tbody td:first-child {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
 </head>
-
 <body>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Part</th>
-        <th>XS</th>
-        <th>S</th>
-        <th>M</th>
-        <th>L</th>
-        <th>XL</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>Chest</td>
-        <td>34</td>
-        <td>36</td>
-        <td>38</td>
-        <td>40</td>
-        <td>42</td>
-      </tr>
-
-      <tr>
-        <td>Waist</td>
-        <td>28</td>
-        <td>30</td>
-        <td>32</td>
-        <td>34</td>
-        <td>36</td>
-      </tr>
-
-      <tr>
-        <td>Hip</td>
-        <td>34</td>
-        <td>36</td>
-        <td>38</td>
-        <td>40</td>
-        <td>42</td>
-      </tr>
-
-      <tr>
-        <td>Length</td>
-        <td>26</td>
-        <td>27</td>
-        <td>28</td>
-        <td>29</td>
-        <td>30</td>
-      </tr>
-    </tbody>
-  </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Part</th>
+                <th>XS</th>
+                <th>S</th>
+                <th>M</th>
+                <th>L</th>
+                <th>XL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Waist</td>
+                <td>25</td>
+                <td>28</td>
+                <td>30</td>
+                <td>31</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Chest</td>
+                <td>34</td>
+                <td>34</td>
+                <td>38</td>
+                <td>40</td>
+                <td>41</td>
+            </tr>
+            <tr>
+                <td>Sleeve</td>
+                <td>23</td>
+                <td>24</td>
+                <td>24</td>
+                <td>25</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
